@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Weather App 🌤</h2>
+
+    <div class="search-box">
+        <select id="citySelect">
+            <option value="">-- Select City --</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="London">London</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+        </select>
+
+        <button id="searchBtn">Get Weather</button>
+    </div>
+
+    <p class="error" id="errorMsg"></p>
+    <p class="loading" id="loadingMsg"></p>
+
+    <div class="weather-box" id="weatherBox">
+        <h3 id="cityName"></h3>
+        <img id="weatherIcon" src="" alt="">
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
